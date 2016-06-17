@@ -1,7 +1,7 @@
 /**
  * 	
  * JQUERY EU COOKIE LAW POPUPS
- * version 1.0.1
+ * version 1.1.0
  * 
  * Code on Github:
  * https://github.com/wimagguc/jquery-eu-cookie-law-popup
@@ -247,16 +247,6 @@ $.fn.euCookieLawPopup = (function() {
 	};
 
 	return publicfunc;
-});
-
-$(document).ready( function() {
-	if ($(".eupopup").length > 0) {
-		$(document).euCookieLawPopup().init({
-			'info' : 'YOU_CAN_ADD_MORE_SETTINGS_HERE',
-			'popupTitle' : 'This website is using cookies. ',
-			'popupText' : 'We use them to give you the best experience. If you continue using our website, we\'ll assume that you are happy to receive all cookies on this website.'
-		});
-	}
 });
 
 $(document).bind("user_cookie_consent_changed", function(event, object) {
